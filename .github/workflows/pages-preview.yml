@@ -1,15 +1,19 @@
-name: Publier apercu statique Tantsaha V02
+﻿name: Publier apercu statique Tantsaha V02
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   deploy:
     environment:
@@ -18,32 +22,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: npm
           cache-dependency-path: client/package-lock.json
-      - name: Install frontend
-        run: npm ci --prefix client
-      - name: Build frontend with GitHub Pages base
+
+      - name: Installer les dependances
+        run: npm ci --prefix client --include=dev
+
+      - name: Compiler React
         run: npm run build --prefix client -- --base=/tantaha_miombona_V02/
-      - name: Rebase public absolute asset URLs in built files only
-        shell: python
+
+      - name: Corriger les ressources publiques
+        shell: bash
         run: |
+          python3 - <<'PY'
           from pathlib import Path
           folder = Path('client/dist')
           for f in folder.rglob('*'):
-              if f.suffix not in ('.js', '.css', '.html') or not f.is_file():
+              if not f.is_file() or f.suffix not in ('.js', '.css', '.html'):
                   continue
               data = f.read_text(encoding='utf-8')
               data = data.replace('/assets/', '/tantaha_miombona_V02/assets/')
               data = data.replace('/tantaha_miombona_V02/tantaha_miombona_V02/assets/', '/tantaha_miombona_V02/assets/')
               f.write_text(data, encoding='utf-8')
-      - name: Add Pages SPA fallback
+          PY
+
+      - name: Configurer le fallback React
         run: cp client/dist/index.html client/dist/404.html
+
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: client/dist
+
       - id: deployment
         uses: actions/deploy-pages@v4

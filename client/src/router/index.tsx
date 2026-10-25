@@ -1,3 +1,4 @@
+import AboutTantsahaPage from '../pages/AboutTantsahaPage';
 import {
   createBrowserRouter,
   Navigate
@@ -14,6 +15,8 @@ import RoleProtectedRoute
 
 import HomePage
   from "../pages/HomePage";
+import AboutPage
+  from "../pages/AboutPage";
 import LoginPage
   from "../pages/LoginPage";
 import RegisterPage
@@ -91,10 +94,12 @@ const protectedLayout = (
 
 const router =
   createBrowserRouter([
-    {
+    { path: "/a-propos", element: <AboutTantsahaPage /> },
+      {
       path: "/",
       element: <HomePage />
     },
+    { path: "/a-propos", element: <AboutPage /> },
     { path: "/catalogue", element: <PublicCatalogPage /> },
     { path: "/producteurs", element: <PublicProducerGuidePage /> },
     {

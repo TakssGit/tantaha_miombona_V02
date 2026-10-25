@@ -1,0 +1,5 @@
+TANTSAHA MIOMBONA V02 - PATCH 11B: CORRECTION BUILD ET OUVERTURE LOCALE
+PROJET: D:\Logs\ANA\Mick_KMZ\Memoire_L3\Application_Web\App_web_local\App_web_local_dev\V02_Tantsaha_miombona\tantaha_miombona_V02
+GIT: AUCUNE COMMANDE GIT; AUCUN PUSH
+ERREUR: Impossible de remplacer la variable HOME, car elle est constante ou en lecture seule.
+RESULTAT_FINAL: ECHEC - AUCUN PUSH

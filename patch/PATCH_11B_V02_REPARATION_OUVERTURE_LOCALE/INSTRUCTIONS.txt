@@ -1,0 +1,15 @@
+PATCH 11B: CORRECTIF DE L'EXECUTION DU PATCH 11.
+
+Diagnostic: Le rapport PATCH 11 confirme PATCH_11_APPLY_OK et 2472 modules compiles.
+Un avertissement Vite dans stderr a provoque une fausse erreur du script PowerShell.
+
+1. EXTRAIRE dans <projet>\patch\PATCH_11B_V02_REPARATION_OUVERTURE_LOCALE
+2. LANCER LANCER_PATCH_11B.bat
+3. Ce script NE REAPPLIQUE PAS les changements du PATCH 11: il verifie que la page et la route existent.
+4. Il compile avec un controle du code retour et non des avertissements stderr.
+5. Il demarre Vite si le port 5173 est libre et ouvre http://localhost:5173/a-propos
+6. Il NE FAIT PAS DE PUSH GIT. Valider en local d'abord.
+
+Le script n'arrete pas un serveur deja en cours sur le port 5173 afin de ne pas fermer
+par erreur une application differente. Si vous voyez une ancienne version, fermer
+le terminal Vite du projet, relancer ce PATCH 11B, puis forcer Ctrl+F5 dans le navigateur.

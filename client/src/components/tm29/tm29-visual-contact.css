@@ -32,3 +32,36 @@
 .tm29-settings{padding:28px;border:1px solid #e8e0d6;border-radius:18px;background:#fff}.tm29-settings-heading{margin-bottom:22px}.tm29-settings-heading>p{margin:0;max-width:850px}.tm29-settings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.tm29-settings-grid label{font-weight:650;font-size:.9rem;color:#284b38;min-width:0}.tm29-settings-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:20px 0}.tm29-settings-actions p{color:#176b42;margin:0}.tm29-history{margin-top:28px}.tm29-history-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}.tm29-history-heading h3{margin:0;color:#173f2d}.tm29-history-heading span{color:#66776e;font-size:.9rem}.tm29-history-scroll{max-width:100%;overflow:auto;border:1px solid #e5e8e2;border-radius:12px}.tm29-history table{border-collapse:collapse;width:100%;font-size:.85rem}.tm29-history th,.tm29-history td{padding:10px 12px;border-bottom:1px solid #e9ece7;text-align:left;vertical-align:top;overflow-wrap:anywhere}.tm29-history th{background:#f0f6ee;color:#254c37;white-space:nowrap}.tm29-history td{max-width:240px;color:#4f6558}
 @media(max-width:850px){.tm29-benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tm29-contact-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.tm29-benefits,.tm29-contact{padding:48px 16px}.tm29-benefit-grid,.tm29-settings-grid{grid-template-columns:1fr}.tm29-contact-info,.tm29-contact-form,.tm29-settings{padding:19px}.tm29-value-chain{justify-content:flex-start}}
+
+/* PATCH07 visual polish: clear typography and crisp journey */
+.tm29-benefit-icon svg,.tm29-value-chain svg,.tm29-socials svg{display:block;flex-shrink:0;stroke-width:2.2}
+.tm29-benefit-icon{color:#196c4b}
+.tm29-value-chain{filter:none!important;backdrop-filter:none!important;opacity:1!important}
+.tm29-value-chain>*{filter:none!important;opacity:1!important}
+.tm29-socials{margin-top:28px;padding:20px 24px;border-radius:18px;background:#fff;border:1px solid #e8ddd0}
+.tm29-socials-empty{color:#66766d;font-size:.95rem;margin:10px 0}
+.tm29-contact a:focus-visible,.tm29-contact button:focus-visible{outline:3px solid #187451;outline-offset:3px}
+@media(max-width:720px){.tm29-value-chain{gap:8px;flex-wrap:wrap}.tm29-socials{padding:18px}}
+
+/* PATCH09_SOCIAL_COLORS */
+/* Couleurs plus lisibles dans la section contact */
+.tm29-contact{background:linear-gradient(180deg,#fffdf9,#f9fcf9)!important}
+.tm29-contact-grid{align-items:stretch}
+.tm29-contact-info,.tm29-contact-form{box-shadow:0 17px 42px rgba(18,63,39,.08)!important;border:1px solid #dfe9df!important}
+.tm29-contact-info__mark{width:64px!important;height:64px!important;border-radius:19px!important;color:#17653e!important;background:linear-gradient(135deg,#e1f4e5,#f1faef)!important}
+.tm29-contact-form button:not(:disabled){background:linear-gradient(115deg,#116b42,#299b62)!important;box-shadow:0 10px 23px rgba(26,112,67,.18)!important}
+.tm29-contact-form input:focus,.tm29-contact-form textarea:focus{outline:2px solid #4eae78;outline-offset:2px}
+.tm29-socials{border:1px solid #dcebdd!important;border-radius:22px!important;background:#f7fbf8!important;padding:24px!important}
+.tm29-socials>div{display:flex;gap:11px;flex-wrap:wrap}
+.tm29-socials a,.tm29-socials .tm-social-not-configured{border-radius:12px!important;padding:12px 16px!important;min-height:46px;display:inline-flex;align-items:center;gap:8px;transition:transform .15s,box-shadow .15s;border:1px solid #e1e9e3;text-decoration:none;font-weight:750}
+.tm29-socials a:hover{transform:translateY(-2px);box-shadow:0 9px 19px rgba(0,0,0,.12)}
+.tm29-socials>div>:nth-child(1){--social:#1877f2;--pale:#eaf2ff}
+.tm29-socials>div>:nth-child(2){--social:#128c55;--pale:#e7f7ed}
+.tm29-socials>div>:nth-child(3){--social:#ff0033;--pale:#ffedf0}
+.tm29-socials>div>:nth-child(4){--social:#0a66c2;--pale:#eaf3fb}
+.tm29-socials>div>:nth-child(5){--social:#bd2976;--pale:#fff0f7}
+.tm29-socials>div>:nth-child(6){--social:#161616;--pale:#f0f0f0}
+.tm29-socials>div>:nth-child(7){--social:#0c7351;--pale:#e8f6f0}
+.tm29-socials>div>a{background:var(--pale,#fff)!important;color:var(--social,#175d41)!important;border-color:color-mix(in srgb,var(--social,#175d41) 24%,white)!important}
+.tm29-socials>div>span{background:#f8faf8!important;color:#647469!important;opacity:.82}
+.tm29-socials>div>:is(a,span) svg{height:19px;width:19px;flex:none}

@@ -1,0 +1,109 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e8e3;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(25, 69, 43, 0.04);
+}
+
+.card + .card {
+  margin-top: 14px;
+}
+
+.card h3 {
+  margin: 0 0 14px;
+  color: #234634;
+}
+
+.card label,
+.form-group label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #455e51;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.card input,
+.card select,
+.card textarea,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #d0ddd5;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #263e31;
+  font: inherit;
+}
+
+.card textarea,
+.form-group textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.btn {
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid #cedbd3;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #294838;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 7px;
+}
+
+.btn-primary {
+  background: #17713b;
+  color: #ffffff;
+  border-color: #17713b;
+}
+
+.portal-table,
+.registration-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.portal-table th,
+.portal-table td,
+.registration-table th,
+.registration-table td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #e6ece8;
+  font-size: 12px;
+}
+
+.portal-message {
+  margin-bottom: 14px;
+  padding: 11px 12px;
+  border-radius: 9px;
+  background: #edf8ef;
+  color: #21663b;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 14px;
+  }
+
+  .portal-table,
+  .registration-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

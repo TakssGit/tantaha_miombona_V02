@@ -1,0 +1,43 @@
+TANTSAHA MIOMBONA V02 - KIT DE REDEMARRAGE ET PUBLICATION
+========================================================
+
+IMPORTANT
+---------
+Ce ZIP contient des outils BAT/PowerShell, PAS le code source complet de
+l'application. Le code source est sur votre ordinateur. Les outils doivent
+etre extraits directement dans le dossier racine du projet Tantsaha_miombona,
+au meme niveau que package.json, client, server et README.md.
+
+ETAPES RECOMMANDEES
+-------------------
+1. Faire une copie de securite manuelle du dossier du projet.
+2. Extraire tous les fichiers de ce kit dans la racine du projet.
+3. Lancer DIAGNOSTIC_ETAT_PROJET.bat.
+4. Examiner le rapport TXT cree sur le Bureau. Il n'inclut pas le contenu
+   des fichiers .env.
+5. Lancer CREER_ZIP_V02.bat. Il cree un ZIP source propre sur le Bureau.
+6. Lancer LANCER_APP_MANUELLEMENT.bat pour demarrer le serveur et le client.
+7. Apres examen du diagnostic, lancer PREPARER_PUSH_GITHUB.bat si vous voulez
+   publier la liste de fichiers selectionnes.
+
+SECURITE ET GITHUB
+------------------
+- Le ZIP source exclut .git, node_modules, patch, git_push_logs, builds,
+  fichiers .env reels, bases de donnees locales et sauvegardes.
+- Seul server/.env.example peut etre inclus.
+- Le BAT GitHub n'envoie pas vers main/master. Il propose de publier la branche
+  courante et exige de taper PUBLIER avant le commit et le push.
+- Il retire uniquement les fichiers de l'index Git avant de re-stager la liste
+  autorisee; il ne supprime pas les fichiers du disque.
+- Les fichiers volumineux (>90 Mo) ou les secrets detectes bloquent la suite.
+- Ne publiez jamais de mot de passe, token, cle API ou base de donnees reelle.
+
+APPLICATION LOCALE
+------------------
+Le client Vite est normalement accessible sur http://localhost:5173.
+Le serveur API utilise le port defini dans sa configuration locale.
+Si server/.env est absent, le lanceur copie server/.env.example vers server/.env
+et s'arrete pour vous laisser verifier et completer la configuration.
+
+Si GitHub refuse le push, le commit peut rester local. Le rapport du terminal
+indiquera l'erreur; ne supprimez pas le projet.

@@ -1,0 +1,9 @@
+﻿TANTSAHA MIOMBONA V02 - SOURCE PROPRE
+Date de creation : 2026-10-24 18:36:41
+Dossier source : D:\Logs\ANA\Mick_KMZ\Memoire_L3\Application_Web\App_web_local\App_web_local_dev\Tantsaha_miombona
+Fichiers inclus : 736
+Fichiers exclus : 11964
+
+Exclusions de securite : .git, node_modules, patch, git_push_logs, builds, .env reels, bases de donnees locales, sauvegardes, logs et fichiers generes.
+Le fichier server/.env.example peut etre inclus; aucun contenu de .env reel n est lu.
+Cette archive est une copie source; elle ne contient pas les dependances node_modules.

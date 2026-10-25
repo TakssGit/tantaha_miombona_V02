@@ -1,0 +1,145 @@
+.security-page {
+  min-height: 100vh;
+  padding: 32px 18px;
+  display: grid;
+  place-items: center;
+  background: #f4f8f5;
+}
+
+.security-card {
+  width: min(520px, 100%);
+  padding: 30px;
+  border: 1px solid #dfe8e2;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.security-brand {
+  color: #17713b;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.security-card h1 {
+  margin: 0;
+  color: #173b28;
+}
+
+.security-card p {
+  color: #6e7d74;
+  line-height: 1.6;
+}
+
+.security-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.security-form label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #385244;
+}
+
+.security-form input,
+.security-form select,
+.security-form textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid #cfdad3;
+  border-radius: 10px;
+  padding: 9px 11px;
+  font: inherit;
+  background: #ffffff;
+}
+
+.security-btn {
+  min-height: 40px;
+  border: 1px solid #d2ddd6;
+  border-radius: 9px;
+  padding: 0 13px;
+  background: #ffffff;
+  color: #294838;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.security-btn-primary {
+  background: #17713b;
+  color: #ffffff;
+  border-color: #17713b;
+}
+
+.security-links {
+  margin-top: 20px;
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.security-links a,
+.security-link {
+  color: #17713b;
+  text-decoration: none;
+}
+
+.security-message {
+  margin: 14px 0;
+  padding: 11px 12px;
+  border-radius: 9px;
+  background: #eaf6ed;
+  color: #20663b;
+  font-size: 13px;
+}
+
+.security-error {
+  background: #fff0f0;
+  color: #9a3030;
+}
+
+.security-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.security-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.security-table th,
+.security-table td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #e5ebe7;
+  font-size: 13px;
+}
+
+.security-temp-box {
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff9df;
+  border: 1px solid #e9d888;
+  display: grid;
+  gap: 8px;
+}
+
+.security-temp-box code {
+  font-size: 18px;
+  font-weight: 800;
+  color: #5d4c00;
+}
+
+@media (max-width: 700px) {
+  .security-card {
+    padding: 22px 16px;
+  }
+
+  .security-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

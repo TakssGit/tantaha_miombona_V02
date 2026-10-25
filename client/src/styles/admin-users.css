@@ -1,0 +1,94 @@
+.admin-users-message,
+.admin-users-temp {
+  margin-bottom: 16px;
+  padding: 13px 15px;
+  border-radius: 10px;
+  background: #edf8ef;
+  color: #225f38;
+}
+
+.admin-users-temp {
+  background: #fff8dd;
+  border: 1px solid #ebd98d;
+  display: grid;
+  gap: 7px;
+}
+
+.admin-users-temp code {
+  font-size: 18px;
+  font-weight: 800;
+  color: #5e4a00;
+}
+
+.admin-users-form {
+  display: grid;
+  gap: 9px;
+}
+
+.admin-users-form input,
+.admin-users-form select,
+.admin-users-table input,
+.admin-users-table select {
+  min-height: 38px;
+  border: 1px solid #d3ddd7;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font: inherit;
+  background: #ffffff;
+}
+
+.admin-users-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.admin-users-table th,
+.admin-users-table td {
+  padding: 9px 7px;
+  text-align: left;
+  border-bottom: 1px solid #e5ebe7;
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.admin-users-table td:first-child {
+  min-width: 180px;
+}
+
+.admin-users-table small {
+  display: block;
+  margin-top: 4px;
+  color: #77857d;
+}
+
+.admin-users-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.admin-users-audit {
+  display: grid;
+  gap: 8px;
+}
+
+.admin-users-audit > div {
+  padding: 9px 0;
+  border-bottom: 1px solid #e5ebe7;
+}
+
+.admin-users-audit strong,
+.admin-users-audit span {
+  display: block;
+}
+
+.admin-users-audit span {
+  margin-top: 3px;
+  color: #738079;
+  font-size: 12px;
+}

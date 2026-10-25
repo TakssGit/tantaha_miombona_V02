@@ -1,0 +1,35 @@
+﻿Domaine;Renseignement / contenu;Valeur actuelle;Emplacement;Action à faire;Priorité
+Identité;Nom public de l’établissement;Tantsaha miombona;Administration > Paramètres / page accueil;Confirmer le nom officiel;Haute
+Identité;Raison sociale / forme juridique;À renseigner;Contenu accueil / documents;Ajouter si nécessaire pour soutenance;Moyenne
+Identité;Logo;Fichier vide;client/public/assets/images/logo_tantsaha_miombona.png;Remplacer par le vrai logo;Haute
+Identité;Favicon;Fichier vide;client/public/favicon.ico;Remplacer par le favicon final;Basse
+Contact;Adresse;Madagascar;Administration > Paramètres;Renseigner adresse exacte;Haute
+Contact;Téléphone;Vide / texte générique;Administration > Paramètres et accueil;Renseigner numéro réel;Haute
+Contact;E-mail;Non défini;Accueil / documentation;Ajouter si utilisé;Moyenne
+Contact;Zone d’intervention;Madagascar;HomePage.tsx;Préciser région/communes;Moyenne
+Accueil;Slogan principal;De la tomate du producteur au produit fini de qualité;HomePage.tsx;Valider formulation finale;Moyenne
+Accueil;Présentation établissement;Texte générique;HomePage.tsx;Remplacer par 3–5 phrases réelles;Haute
+Accueil;Mission / vision;Texte circuit court;HomePage.tsx;Adapter au mémoire et au transformateur;Moyenne
+Accueil;Image unité de transformation;Fichier vide;assets/images/hero_unite_transformation.jpg;Photo réelle en paysage;Haute
+Accueil;Image producteurs;Fichier vide;assets/images/producteurs_champ_tomate.jpg;Photo réelle terrain;Haute
+Accueil;Image point focal;Fichier vide;assets/images/point_focal_producteurs.jpg;Photo réunion/collecte terrain;Moyenne
+Accueil;Image collecte/transport;Fichier vide;assets/images/collecte_transport_tomate.jpg;Photo collecte ou véhicule;Moyenne
+Accueil;Image transformation;Fichier vide;assets/images/transformation_tomate.jpg;Photo chaîne / atelier;Haute
+Accueil;Image qualité/traçabilité;Fichier vide;assets/images/qualite_tracabilite.jpg;Photo contrôle qualité;Moyenne
+Produits;Sauce tomate — photo;Fichier vide;assets/images/produit_sauce_tomate.jpg;Photo produit sur fond propre;Haute
+Produits;Purée tomate — photo;Fichier vide;assets/images/produit_puree_tomate.jpg;Photo produit;Haute
+Produits;Concentré — photo;Fichier vide;assets/images/produit_concentre_tomate.jpg;Photo produit;Haute
+Produits;Coulis — photo;Fichier vide;assets/images/produit_coulis_tomate.jpg;Photo produit;Moyenne
+Produits;Tomate séchée — photo;Fichier vide;assets/images/produit_tomate_sechee.jpg;Photo produit;Moyenne
+Produits;Prix de vente;Données SQLite de démonstration;Table products;Remplacer par prix réels;Haute
+Produits;Conditionnement / unité;Données SQLite;Table products;Valider formats réels;Haute
+Produits;Stock disponible;Calcul automatique;stock_movements;Saisir stocks réels pour démo finale;Haute
+Producteurs;Communes / fokontany;Données de démonstration;Tables producers/parcels;Adapter au terrain réel si souhaité;Moyenne
+Point focal;Liste officielle des points focaux;Non définie;Administration utilisateurs;Créer les comptes réels;Moyenne
+Comptes;Règles d’inscription;Producteur/Distributeur avec validation;P23;Valider avec l’organisation;Moyenne
+Commercial;Conditions de commande;Commande simple sans décrément immédiat;P25;Définir livraison, paiement, minimum commande;Moyenne
+Sécurité;Politique de mot de passe;10 caractères + maj/min/chiffre;P23/P26;Valider si besoin de symbole obligatoire;Basse
+Objectifs;Transport cible;8 h;settings;Renseigner cible retenue par le mémoire;Haute
+Objectifs;Pertes maximales;10 %;settings;Renseigner cible retenue;Haute
+Objectifs;Conformité cible;85 %;settings;Renseigner cible retenue;Haute
+Objectifs;Rendement cible;70 %;settings;Renseigner cible retenue;Haute

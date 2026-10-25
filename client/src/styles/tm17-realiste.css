@@ -1,0 +1,5 @@
+﻿/* PATCH 17: photorealistic local image support; no layout or auth change */
+img { object-fit: cover; }
+img[src*="logo"], img[src*="icon"], img[src*="avatar"], img[src*="favicon"] { object-fit: contain; }
+.tm17-realistic-image { width: 100%; height: auto; object-fit: cover; border-radius: 12px; }
+.tm17-photo-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); gap: 16px; }

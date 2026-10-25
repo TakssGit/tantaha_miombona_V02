@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Transformation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7ead2"/>
+      <stop offset="100%" stop-color="#edd9b0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#eff7f2" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="150" r="220" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="250" cy="760" r="280" fill="#ffffff" fill-opacity="0.10"/>
+  <rect x="82" y="74" width="1436" height="752" rx="42" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.18"/>
+  <rect x="120" y="110" width="540" height="218" rx="30" fill="url(#panel)"/>
+  <text x="158" y="184" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#173b28">Transformation</text>
+  <text x="158" y="242" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="500" fill="#4f6759">Réception, tri, cuisson et conditionnement des produits finis.</text>
+  <rect x="810" y="220" width="620" height="420" rx="30" fill="#ffffff"/><rect x="860" y="270" width="220" height="120" rx="20" fill="#e0f1e5"/><rect x="1110" y="270" width="270" height="120" rx="20" fill="#ffe7cc"/><rect x="860" y="420" width="520" height="58" rx="16" fill="#edf3ef"/><rect x="860" y="500" width="430" height="58" rx="16" fill="#edf3ef"/><circle cx="330" cy="570" r="60" fill="#df503f"/><circle cx="420" cy="540" r="52" fill="#df503f"/><circle cx="505" cy="584" r="42" fill="#df503f"/><rect x="250" y="440" width="115" height="120" rx="22" fill="#63a96a"/><text x="880" y="742" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#66502f">Tri • Cuisson • Mise en pot • Stock</text>
+</svg>

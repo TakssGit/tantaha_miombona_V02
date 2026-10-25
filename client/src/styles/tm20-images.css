@@ -1,0 +1,52 @@
+﻿/* PATCH 20 - placement et coherences visuelles des images */
+img {
+  max-width: 100%;
+  display: block;
+}
+img:not([src*="logo"]):not([src*="icon"]):not([src*="avatar"]):not([src*="favicon"]) {
+  object-fit: cover;
+  object-position: center center;
+}
+[class*="hero"] img,
+[class*="banner"] img,
+[class*="cover"] img,
+[class*="landing"] img,
+[class*="header"] img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 18px;
+}
+[class*="card"] img,
+[class*="product"] img,
+[class*="catalog"] img,
+[class*="market"] img,
+[class*="gallery"] img,
+[class*="item"] img,
+[class*="producer"] img,
+[class*="formation"] img,
+[class*="community"] img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 14px;
+}
+figure, .image, .photo, .illustration, .thumbnail, .thumb {
+  overflow: hidden;
+  border-radius: 14px;
+}
+[class*="grid"] img,
+[class*="list"] img {
+  height: 100%;
+}
+.tm20-photo,
+.tm20-realistic,
+.tm20-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 16px;
+}

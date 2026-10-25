@@ -1,0 +1,27 @@
+{
+  "name": "tantsaha-miombona",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tantsaha_miombona - application locale de gestion du circuit court agroalimentaire",
+  "scripts": {
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "install:all": "npm run install:client && npm run install:server",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:client && npm run build:server",
+    "typecheck:client": "npm run typecheck --prefix client",
+    "typecheck:server": "npm run typecheck --prefix server",
+    "typecheck": "npm run typecheck:client && npm run typecheck:server",
+    "db:migrate": "npm run db:migrate --prefix server",
+    "db:seed": "npm run db:seed --prefix server",
+    "db:reset": "npm run db:reset --prefix server",
+    "db:setup": "npm run db:setup --prefix server",
+    "test:smoke": "npm run test:smoke --prefix server",
+    "setup": "npm run install:all && npm run db:setup",
+    "test:final": "npm run test:final --prefix server",
+    "preview:data": "npm run preview:data --prefix server"
+  }
+}

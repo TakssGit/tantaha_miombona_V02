@@ -1,0 +1,37 @@
+INSERT OR IGNORE INTO settings(
+    setting_key,
+    setting_value
+)
+VALUES
+(
+    'organizationName',
+    'Tantsaha Miombona'
+),
+(
+    'address',
+    'Madagascar'
+),
+(
+    'phone',
+    ''
+),
+(
+    'currency',
+    'Ar'
+),
+(
+    'targetTransportHours',
+    '8'
+),
+(
+    'maximumLossRate',
+    '10'
+),
+(
+    'targetConformityRate',
+    '85'
+),
+(
+    'targetYieldRate',
+    '70'
+);

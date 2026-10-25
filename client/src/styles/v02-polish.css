@@ -1,0 +1,6 @@
+/* PATCH 06 : accessibilite et lisibilite, sans modifier les donnees */
+:where(.public-site,.v02-site) :focus-visible{outline:3px solid #edaa36;outline-offset:3px}
+:where(.public-site,.v02-site) a,:where(.public-site,.v02-site) button{transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}
+@media(hover:hover){:where(.public-site,.v02-site) .public-product-card:hover,:where(.public-site,.v02-site) .v02-product-card:hover{transform:translateY(-3px);box-shadow:0 16px 32px #164a241c}}
+:where(.public-site,.v02-site) img{max-width:100%}
+@media(prefers-reduced-motion:reduce){:where(.public-site,.v02-site) *{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

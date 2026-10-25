@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Qualité &amp; traçabilité">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#c4e6d4"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#eff7f2" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="150" r="220" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="250" cy="760" r="280" fill="#ffffff" fill-opacity="0.10"/>
+  <rect x="82" y="74" width="1436" height="752" rx="42" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.18"/>
+  <rect x="120" y="110" width="540" height="218" rx="30" fill="url(#panel)"/>
+  <text x="158" y="184" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#173b28">Qualité &amp; traçabilité</text>
+  <text x="158" y="242" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="500" fill="#4f6759">Chaque lot est suivi depuis l’origine jusqu’au produit fini.</text>
+  <rect x="820" y="182" width="590" height="480" rx="28" fill="#ffffff"/><rect x="860" y="230" width="510" height="74" rx="18" fill="#edf7ef"/><rect x="900" y="370" width="430" height="42" rx="16" fill="#dff1e5"/><rect x="900" y="432" width="300" height="42" rx="16" fill="#dff1e5"/><rect x="900" y="494" width="470" height="42" rx="16" fill="#dff1e5"/><rect x="190" y="410" width="420" height="260" rx="28" fill="#1f7d47"/><rect x="230" y="450" width="340" height="40" rx="12" fill="#b6e2c4"/><rect x="230" y="514" width="200" height="40" rx="12" fill="#8fcfa6"/><rect x="230" y="578" width="250" height="40" rx="12" fill="#dff1e5"/><circle cx="375" cy="287" r="86" fill="#f3a530"/><line x1="375" y1="287" x2="460" y2="338" stroke="#1f7d47" stroke-width="10" stroke-linecap="round"/><rect x="474" y="314" width="112" height="52" rx="20" fill="#ffffff"/>
+</svg>

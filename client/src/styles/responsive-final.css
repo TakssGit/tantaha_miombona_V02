@@ -1,0 +1,141 @@
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+.app-shell,
+.app-main,
+.app-content,
+.card,
+.dashboard-grid-two,
+.page-header {
+  min-width: 0;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.card {
+  overflow-wrap: anywhere;
+}
+
+.card table,
+.registration-table,
+.security-table {
+  width: 100%;
+}
+
+.table-responsive,
+.card:has(> table) {
+  overflow-x: auto;
+}
+
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-grid-two {
+    grid-template-columns:
+      1fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .dashboard-grid-two {
+    grid-template-columns:
+      1fr;
+  }
+
+  .app-content {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .page-header-actions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .page-header-actions > * {
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .page-header-title {
+    font-size: 24px;
+  }
+
+  .header-user-details {
+    display: none;
+  }
+
+  .btn,
+  button,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  textarea {
+    min-height: 90px;
+  }
+
+  table {
+    min-width: 680px;
+  }
+
+  .public-hero h1 {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .page-header-title {
+    font-size: 21px;
+  }
+}

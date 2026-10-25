@@ -1,0 +1,4 @@
+﻿PATCH 23 - Frontend images complete
+Images re-analysees selon nom du fichier, chemin et section.
+Images inspirees des paysages, personnages et du feeling de Madagascar.
+Banque: /assets/images/tm23_bank/

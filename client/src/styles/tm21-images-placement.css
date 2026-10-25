@@ -1,0 +1,4 @@
+﻿/* PATCH 22: targeted opt-in responsive photo styling */
+.tm22-photo { display: block; max-width: 100%; width: 100%; object-fit: cover; object-position: center; border-radius: 12px; }
+.tm22-hero { aspect-ratio: 16 / 9; }
+.tm22-card { aspect-ratio: 4 / 3; }

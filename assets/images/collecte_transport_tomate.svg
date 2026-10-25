@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Collecte &amp; transport">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff3ec"/>
+      <stop offset="100%" stop-color="#bee4d7"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#eff7f2" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="150" r="220" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="250" cy="760" r="280" fill="#ffffff" fill-opacity="0.10"/>
+  <rect x="82" y="74" width="1436" height="752" rx="42" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.18"/>
+  <rect x="120" y="110" width="540" height="218" rx="30" fill="url(#panel)"/>
+  <text x="158" y="184" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#173b28">Collecte &amp; transport</text>
+  <text x="158" y="242" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="500" fill="#4f6759">Organisation du ramassage et de l’acheminement vers l’unité.</text>
+  <rect x="910" y="500" width="320" height="96" rx="26" fill="#f4a63a"/><rect x="948" y="460" width="128" height="70" rx="18" fill="#f4a63a"/><circle cx="995" cy="612" r="34" fill="#325044"/><circle cx="1170" cy="612" r="34" fill="#325044"/><rect x="820" y="346" width="250" height="70" rx="24" fill="#ffffff"/><rect x="1100" y="346" width="250" height="70" rx="24" fill="#ffffff"/><circle cx="300" cy="540" r="56" fill="#de4f3e"/><circle cx="380" cy="575" r="44" fill="#de4f3e"/><line x1="340" y1="492" x2="340" y2="400" stroke="#2c7c44" stroke-width="10" stroke-linecap="round"/><line x1="1200" y1="380" x2="1290" y2="380" stroke="#1a7a46" stroke-width="10" stroke-linecap="round"/><line x1="1260" y1="350" x2="1290" y2="380" stroke="#1a7a46" stroke-width="10" stroke-linecap="round"/><line x1="1260" y1="410" x2="1290" y2="380" stroke="#1a7a46" stroke-width="10" stroke-linecap="round"/><text x="830" y="742" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#2f5d48">Conditionnement • Délai • Acheminement</text>
+</svg>

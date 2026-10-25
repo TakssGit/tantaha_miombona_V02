@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Picto tomate Tantsaha Miombona</title>
+  <defs>
+    <linearGradient id="tomatoRed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff6252"/><stop offset=".58" stop-color="#e12e25"/><stop offset="1" stop-color="#a9161b"/></linearGradient>
+    <linearGradient id="leafGreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#62a94b"/><stop offset="1" stop-color="#145d35"/></linearGradient>
+  </defs>
+  <circle cx="64" cy="67" r="58" fill="#f7fbf4" stroke="#dbe9d7" stroke-width="3"/>
+  <path d="M61 37 C46 13 29 25 37 39 C21 28 16 44 33 50 C19 55 29 69 46 59 C49 77 66 70 65 53 C79 68 91 57 81 47 C100 50 104 34 86 33 C96 17 76 14 66 35 Z" fill="url(#leafGreen)"/>
+  <path d="M63 45 C47 41 33 47 29 62 C23 83 42 104 62 105 C83 107 102 89 98 68 C95 50 79 43 63 45 Z" fill="url(#tomatoRed)" stroke="#a91d20" stroke-width="2"/>
+  <path d="M64 48 L57 61 L66 57 L72 65 L72 52" fill="#216d3d"/>
+  <path d="M42 60 C38 69 39 79 46 85" fill="none" stroke="#ffaaa0" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <path d="M81 64 C86 70 86 77 82 82" fill="none" stroke="#ff8b7d" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <path d="M38 88 C50 105 75 106 89 89 C83 109 55 116 38 88 Z" fill="#c92225" opacity=".55"/>
+  <path d="M65 39 C68 28 80 22 89 28 C82 38 75 41 65 39 Z" fill="#438e3d"/>
+</svg>

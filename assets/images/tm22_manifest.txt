@@ -1,0 +1,11 @@
+﻿PATCH 22 - Images bien placees et non identiques
+Les images sont distribuees selon le nom du fichier et de la section.
+Les images manquantes peuvent etre generees automatiquement.
+/assets/images/tm22_bank/hero/hero_1.jpg
+/assets/images/tm22_bank/culture/culture_1.jpg
+/assets/images/tm22_bank/producteur/producteur_1.jpg
+/assets/images/tm22_bank/marche/marche_1.jpg
+/assets/images/tm22_bank/formation/formation_1.jpg
+/assets/images/tm22_bank/communaute/communaute_1.jpg
+/assets/images/tm22_bank/paysage/paysage_1.jpg
+/assets/images/tm22_bank/product/product_1.jpg

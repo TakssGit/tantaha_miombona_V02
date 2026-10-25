@@ -1,0 +1,7 @@
+﻿PATCH 17 - Assets photorealistes disponibles:
+/assets/images/tm17_culture.jpg
+/assets/images/tm17_producteur.jpg
+/assets/images/tm17_marche.jpg
+/assets/images/tm17_formation.jpg
+/assets/images/tm17_communaute.jpg
+/assets/images/tm17_paysage.jpg

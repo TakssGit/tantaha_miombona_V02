@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Coulis de tomate">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdeedf"/>
+      <stop offset="100%" stop-color="#f7d2b4"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#eff7f2" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="150" r="220" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="250" cy="760" r="280" fill="#ffffff" fill-opacity="0.10"/>
+  <rect x="82" y="74" width="1436" height="752" rx="42" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.18"/>
+  <rect x="120" y="110" width="540" height="218" rx="30" fill="url(#panel)"/>
+  <text x="158" y="184" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#173b28">Coulis de tomate</text>
+  <text x="158" y="242" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="500" fill="#4f6759">Texture fluide pour sauces et accompagnements.</text>
+  <rect x="648" y="180" width="310" height="540" rx="34" fill="#fffefa"/><rect x="714" y="248" width="178" height="98" rx="18" fill="#b7dec1"/><rect x="694" y="350" width="218" height="220" rx="26" fill="#d84a3b"/><rect x="706" y="584" width="194" height="88" rx="16" fill="#f3e0ca"/><circle cx="1166" cy="340" r="124" fill="#17713b"/><circle cx="1274" cy="502" r="74" fill="#de4f3e"/><text x="1065" y="716" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700" fill="#5f4731">Prêt à l’emploi</text>
+</svg>

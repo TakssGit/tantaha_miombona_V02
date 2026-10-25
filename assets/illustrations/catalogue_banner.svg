@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Découvrir le catalogue">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8efe2"/>
+      <stop offset="100%" stop-color="#f1d7b2"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#eff7f2" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="150" r="220" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="250" cy="760" r="280" fill="#ffffff" fill-opacity="0.10"/>
+  <rect x="82" y="74" width="1436" height="752" rx="42" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.18"/>
+  <rect x="120" y="110" width="540" height="218" rx="30" fill="url(#panel)"/>
+  <text x="158" y="184" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#173b28">Découvrir le catalogue</text>
+  <text x="158" y="242" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="500" fill="#4f6759">Bannière décorative pour les pages publiques.</text>
+  <rect x="860" y="220" width="500" height="400" rx="28" fill="#fffefa"/><rect x="920" y="276" width="170" height="170" rx="18" fill="#fbe1be"/><rect x="1112" y="276" width="170" height="170" rx="18" fill="#dfeee4"/><rect x="920" y="470" width="362" height="46" rx="14" fill="#e7f0e9"/><rect x="920" y="532" width="300" height="46" rx="14" fill="#e7f0e9"/><circle cx="310" cy="470" r="84" fill="#17713b"/><circle cx="434" cy="548" r="64" fill="#de4f3e"/><text x="912" y="726" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#6c5435">Produits disponibles toute l’année</text>
+</svg>

@@ -1,0 +1,9 @@
+﻿PATCH 20 - Mise a jour complete des images
+Theme principal : filiere tomate.
+Les visuels non realistes ont ete remplaces et le placement des images a ete corrige.
+/assets/images/tm20_culture.jpg
+/assets/images/tm20_producteur.jpg
+/assets/images/tm20_marche.jpg
+/assets/images/tm20_formation.jpg
+/assets/images/tm20_communaute.jpg
+/assets/images/tm20_paysage.jpg

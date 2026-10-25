@@ -1,4 +1,4 @@
-name: Publier Tantsaha Miombona V02 sur GitHub Pages
+name: Tantsaha V02 - Deploy React
 
 on:
   push:
@@ -12,42 +12,77 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages-tantsaha-v02
+  group: github-pages
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Recuperer les sources
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Installer Node.js
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: npm
-          cache-dependency-path: client/package-lock.json
-      - name: Installer les dependances client
+
+      - name: Install dependencies
         run: npm ci --prefix client --include=dev
-      - name: Compiler le frontend pour Pages
+
+      - name: Build React
         run: npm run build --prefix client -- --base=/tantaha_miombona_V02/
-      - name: Verifier les fichiers du site
+
+      - name: Prepare GitHub Pages
         shell: bash
         run: |
-          set -euo pipefail
-          test -s client/dist/index.html
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+
+          const dist = 'client/dist';
+          const prefix = '/tantaha_miombona_V02/';
+
+          function walk(dir) {
+            for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+              const file = path.join(dir, entry.name);
+              if (entry.isDirectory()) {
+                walk(file);
+              } else if (/\.(html|js|css)$/.test(entry.name)) {
+                let content = fs.readFileSync(file, 'utf8');
+                content = content.replace(
+                  /(["'(])\/assets\//g,
+                  '$1' + prefix + 'assets/'
+                );
+                fs.writeFileSync(file, content);
+              }
+            }
+          }
+
+          walk(dist);
+
+          fs.copyFileSync(
+            path.join(dist, 'index.html'),
+            path.join(dist, '404.html')
+          );
+          NODE
+
+          test -f client/dist/index.html
           test -d client/dist/assets
-          grep -q '/tantaha_miombona_V02/assets/' client/dist/index.html
-          cp client/dist/index.html client/dist/404.html
-      - name: Configurer GitHub Pages
+
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Envoyer le site statique
+
+      - name: Upload React build
         uses: actions/upload-pages-artifact@v3
         with:
           path: client/dist
-      - name: Publier le site
-        id: deploy
+
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

@@ -3,7 +3,7 @@ import { env } from "./config/env.js";
 
 const server = app.listen(
   env.port,
-  "127.0.0.1",
+  process.env.NODE_ENV === "production" ? "0.0.0.0" : "127.0.0.1",
   () => {
     console.log("");
     console.log(

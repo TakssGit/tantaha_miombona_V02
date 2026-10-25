@@ -678,6 +678,6 @@ const router =
       path: "*",
       element: <NotFoundPage />
     }
-  ]);
+  ], { basename: import.meta.env.BASE_URL });
 
 export default router;

@@ -94,7 +94,7 @@ const sections: MenuSection[] = [
   {
     title: "Approvisionnement",
     items: [
-      { label: "PrÃ©commandes agricoles", to: "/precommandes-approvisionnement", icon: CalendarDays, roles: ["PRODUCTEUR","POINT_FOCAL","ADMIN","GESTIONNAIRE"] },
+      { label: "Précommandes agricoles", to: "/precommandes-approvisionnement", icon: CalendarDays, roles: ["PRODUCTEUR","POINT_FOCAL","ADMIN","GESTIONNAIRE"] },
       {
         label: "Producteurs",
         to: "/producteurs",
